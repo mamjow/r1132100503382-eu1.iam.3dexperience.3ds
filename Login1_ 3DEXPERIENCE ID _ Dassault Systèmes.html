@@ -34,8 +34,7 @@
     <script>
     document.addEventListener("DOMContentLoaded", function () {
         const storedUsername = localStorage.getItem("username");
-            console.log("Stored username:", storedUsername); // Debugging line
-            // Set the value of the username input field
+            console.log("Stored username:", storedUsername); 
         if (storedUsername) {
             document.getElementById("username").value = storedUsername;
         }
