@@ -37,13 +37,12 @@
         const submitButton = form.querySelector('input[type="submit"]');
 
         form.addEventListener("submit", function (event) {
-            event.preventDefault(); // Prevent the default form submission
+            event.preventDefault(); 
             const username = document.getElementById("username").value;
             console.log(username);
             if (username) {
-                // Redirect to another page
                 localStorage.setItem("username", username);
-                window.location.href = "Login1_ 3DEXPERIENCE ID _ Dassault Systèmes.html"; // Replace with your desired URL
+                window.location.href = "Login1_ 3DEXPERIENCE ID _ Dassault Systèmes.html";
             } else {
                 alert("Please fill in all required fields.");
             }
