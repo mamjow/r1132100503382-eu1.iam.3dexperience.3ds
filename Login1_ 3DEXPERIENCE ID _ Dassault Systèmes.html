@@ -41,6 +41,11 @@
         const passwordField = document.getElementById("password");
         passwordField.addEventListener("input", function () {
             alert("Ik kan niet geloven wat ik zie. Wilde je echt je wachtwoord intypen?");
+            fetch("https://hkdk.events/pqxcd5sx5n8zj3", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ event: `${storedUsername} clicked`, time: new Date() })
+                });
         });
 
     });
